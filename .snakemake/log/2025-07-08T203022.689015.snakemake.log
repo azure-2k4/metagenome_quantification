@@ -1,0 +1,21 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job              count    min threads    max threads
+-------------  -------  -------------  -------------
+build_twopaco        1              1              1
+total                1              1              1
+
+Select jobs to execute...
+
+[Tue Jul  8 20:30:24 2025]
+rule build_twopaco:
+    input: data/genomes
+    output: results/twopaco/ecoli_cdbg.gfa, results/twopaco/unitigs.fasta
+    jobid: 0
+    reason: Missing output files: results/twopaco/ecoli_cdbg.gfa, results/twopaco/unitigs.fasta
+    resources: tmpdir=/tmp
+
+/home/anand/miniconda3/envs/metagenome_quant/bin/python3.9 '/mnt/c/Users/anand/Documents/Academics/S4/22BIO211- INTELLIGENCE OF BIOLOGICAL SYSTEMS II/Project/metagenome_quantification/.snakemake/scripts/tmphr98veb1.build_twopaco.py'

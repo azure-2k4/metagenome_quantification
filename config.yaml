@@ -1,0 +1,59 @@
+# Pipeline Configuration
+
+# Input Settings
+genomes:
+  - accession: "NC_000913.3"
+    name: "ecoli_k12_mg1655"
+    abundance: 0.10
+  - accession: "CP053602"
+    name: "ecoli_bl21_de3"
+    abundance: 0.20
+  - accession: "NC_012967.1"
+    name: "ecoli_rel606"
+    abundance: 0.30
+  - accession: "CP009072"
+    name: "ecoli_atcc25922"
+    abundance: 0.40
+
+# Read Simulation Parameters
+reads:
+  total_pairs: 1000
+  read_length: 50
+  fragment_size: 200
+  error_rate: 0.01
+# Note: The above parameters are for a small test dataset. For larger datasets, you can use:
+# reads:
+#   total_pairs: 200000
+#   read_length: 100
+#   fragment_size: 300
+#   error_rate: 0.015
+
+# TwoPaCo Parameters
+twopaco:
+  k: 101
+  memory_gb: 5
+  threads: 4
+
+# BWA Parameters
+bwa:
+  threads: 4
+  min_score: 30
+
+# BLAST Parameters for A-Bruijn
+blast:
+  perc_identity: 97
+  min_raw_gapped_score: 100
+  threads: 4
+
+# Output Paths
+output_dirs:
+  genomes: "data/genomes"
+  reads: "data/reads"
+  twopaco: "results/twopaco"
+  abruijn: "results/abruijn"
+  evaluation: "results/evaluation"
+  plots: "results/plots"
+
+# Performance Settings
+threads: 4
+memory_gb: 16

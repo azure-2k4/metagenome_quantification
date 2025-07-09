@@ -1,0 +1,25 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job               count    min threads    max threads
+--------------  -------  -------------  -------------
+simulate_reads        1              1              1
+total                 1              1              1
+
+Select jobs to execute...
+
+[Tue Jul  8 19:46:15 2025]
+rule simulate_reads:
+    input: data/genomes
+    output: data/reads/simulated_1.fq, data/reads/simulated_2.fq, data/ground_truth.json
+    jobid: 0
+    reason: Missing output files: data/ground_truth.json, data/reads/simulated_2.fq, data/reads/simulated_1.fq
+    resources: tmpdir=/tmp
+
+/home/anand/miniconda3/envs/metagenome_quant/bin/python3.9 '/mnt/c/Users/anand/Documents/Academics/S4/22BIO211- INTELLIGENCE OF BIOLOGICAL SYSTEMS II/Project/metagenome_quantification/.snakemake/scripts/tmpxtmwl_j3.simulate_reads.py'
+[Tue Jul  8 19:46:22 2025]
+Finished job 0.
+1 of 1 steps (100%) done
+Complete log: .snakemake/log/2025-07-08T194614.775441.snakemake.log

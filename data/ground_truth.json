@@ -1,0 +1,14 @@
+{
+  "abundances": {
+    "ecoli_k12_mg1655": 0.1,
+    "ecoli_bl21_de3": 0.2,
+    "ecoli_rel606": 0.3,
+    "ecoli_atcc25922": 0.4
+  },
+  "read_counts": {
+    "ecoli_k12_mg1655": 100,
+    "ecoli_bl21_de3": 200,
+    "ecoli_rel606": 300,
+    "ecoli_atcc25922": 400
+  }
+}

@@ -1,0 +1,28 @@
+name: metagenome_quant
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.9
+  - twopaco=1.1.0
+  - bwa=0.7.17
+  - art=2016.06.05
+  - blast=2.13.0
+  - samtools=1.15
+  - mummer4
+  - snakemake=7.18
+  - bandage
+  - pandas
+  - numpy
+  - scipy
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - pytest
+  - biopython
+  - pip
+  - pysam
+  - pip:
+    - memory_profiler
+    - psutil
