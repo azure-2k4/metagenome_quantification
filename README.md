@@ -108,14 +108,6 @@ project/
 └── tests/               # Unit and integration tests
 ```
 
-## Performance Targets
-
-- TwoPaCo graph construction: <10 minutes
-- A-Bruijn graph construction: <15 minutes
-- Read mapping: <5 minutes per method
-- Quantification: <5 minutes total
-- Total runtime: <90 minutes
-- Peak memory: <12 GB
 
 ## Authors
 
